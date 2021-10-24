@@ -1,12 +1,38 @@
 # Irani_Chai_Megathon
 Frameworks: PyTorch, OpenCV, Face_Detection
 
-To install dependencies and libraries, use provided 'requirements.txt'.
+# Installation
+Navigate to `source code` directory and install the environment either using conda or requirements.txt followed by pip install command.
 
-To run on an image: python detect1.py --source image_name.jpg
+### conda 
+```
+conda env create --file conda-gpu.yml
+```
 
-To run on live webcam: python detect1.py --source 0
+### pip
+```
+pip3 install -r requirements.txt
+```
 
-To run on video: Extract frames in a folder, detect on complete folder : python detect1.py --source folder_path
+# How to run
+After installation or activating the enviroment, execute the following command to run over live input stream:
+```
+python3 object_tracker.py --video 0 --output $path_to_output_video
+```
 
-Compile the frames from 'output' folder using opencv to get the final annotated video.
+To run over existing clip, run the following command:
+```
+python3 object_tracker.py --video $path_to_input_video --output $path_to_output_video
+```
+
+Finally, `.csv` and `.txt` files are generated within the source_code directory after completion of the above command.
+
+# Outputs
+Link to google drive for model generated output videos, text and csv files are [here](https://drive.google.com/drive/folders/1AKzAMrSUDOyPx-cEn1SsSW_3m7ginJpc).
+
+### Sample Output 
+![First image](https://github.com/ar-ohi-srivastav/Irani_Chai_Megathon/blob/main/images/1.png?raw=true)
+
+![Second image](https://github.com/ar-ohi-srivastav/Irani_Chai_Megathon/blob/main/images/2.png?raw=true)
+
+![Thrid image](https://github.com/ar-ohi-srivastav/Irani_Chai_Megathon/blob/main/images/3.png?raw=true)
