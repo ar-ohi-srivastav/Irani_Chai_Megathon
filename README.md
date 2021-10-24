@@ -7,6 +7,6 @@ To run on an image: python detect1.py --source image_name.jpg
 
 To run on live webcam: python detect1.py --source 0
 
-To run on video: Extract frames in a foler, detect on complete folder : python detect1.py --source folder_path
+To run on video: Extract frames in a folder, detect on complete folder : python detect1.py --source folder_path
 
 Compile the frames using opencv to get the video.
